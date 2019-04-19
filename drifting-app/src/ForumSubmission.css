@@ -1,0 +1,56 @@
+.App-header {
+    display: none;
+}
+
+
+body {
+  background-image: linear-gradient(rgba(189, 221, 255, 0.62),  #e2bbff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.forumSubmission {
+    background: rgba(red, green, blue, 0);
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#exercise {
+    background: rgba(red, green, blue, 0);
+   
+    overflow: scroll;
+    height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+#child {
+    height: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-destination: 50% 50%;
+    position: relative;
+    padding-top: 30vh;
+}
+
+
+#buttons {
+    margin-bottom: 25vh;
+}
+
