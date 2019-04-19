@@ -224,13 +224,25 @@ export default class Encouragement extends Component {
             <div className="container">
                 <div className="intro">
                     <h1>Encouraging Bottle</h1>
+
+                    <div id="description">
+                        <p>Share an encouraging message. It can be advice, a resource, a personal experience, or words of comfort</p>
+                        
+                        <div id="guide">
+                            <h4>Remember</h4>
+                            Be empathetic<br />
+                            Acknowledge, but not minimize, other's emotions<br />
+                            Don't feel pressure to have to talk<br />
+                        </div>
+
+                    </div>
                 </div>
 
 
 
                 <form>
 
-                    <div id="section">
+                    {/*<div id="section">
                         <label >How are you feeling right now?</label>
                         <br />
                         <div className="btn-group btn-group-toggle" data-toggle="buttons">
@@ -280,7 +292,7 @@ export default class Encouragement extends Component {
                                 Awful
                         </label>
                         </div>
-                    </div>
+                    </div>*/}
 
                     <div id="section">
                         <div className="form-group">
@@ -312,13 +324,13 @@ export default class Encouragement extends Component {
                     </div>
                 </form>
 
-                <button className="btn btn-info mr-2" onClick={(e) => this.addBottle(e)}>
+                <button className="btn btn-primary mr-2" onClick={(e) => this.addBottle(e)}>
                     Public
                 </button>
-                <button className="btn btn-info mr-2" onClick={(e) => this.saveBottle(e)}>
+                <button className="btn btn-primary mr-2" onClick={(e) => this.saveBottle(e)}>
                     Only I Can See
                 </button>
-                <button className="btn btn-info mr-2" onClick={() => this.disposeBottle()}>
+                <button className="btn btn-primary mr-2" onClick={() => this.disposeBottle()}>
                     Dispose
                 </button>
             </div>

@@ -1,5 +1,5 @@
 .App-header {
-    display: none;
+   /* display: none;*/
 }
 
 
@@ -21,9 +21,10 @@ body {
     background: rgba(red, green, blue, 0);
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar {   
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
+
 }
 
 html, body {
@@ -33,20 +34,20 @@ html, body {
 
 #exercise {
     background: rgba(red, green, blue, 0);
-   
     overflow: scroll;
     height: 100vh;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    color: #7A6085;
 }
 
 #child {
-    height: 100vh;
+    height: 80vh;
     scroll-snap-align: center;
     scroll-snap-destination: 50% 50%;
     position: relative;
-    padding-top: 30vh;
+    padding-top: 20vh; 
 }
 
 
@@ -54,3 +55,8 @@ html, body {
     margin-bottom: 25vh;
 }
 
+#description {
+    margin: auto;
+    width: 80%;
+    font-size: 12pt;
+}

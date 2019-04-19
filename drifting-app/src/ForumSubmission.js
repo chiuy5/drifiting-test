@@ -224,181 +224,197 @@ export default class ForumSubmission extends Component {
         return (
             <div className="container" id="exercise">
 
+                <section id="child">
+                    <div className="intro">
+                        <h1>New Bottle</h1>
+
+                        <div id="description">
+                            <br />
+                            <p>Go through the following exercise to sort out what's on your mind</p>
+                            <p>You are free to go at your own pace and skip any questions you want</p>
+                            <br />
+                            <br />
+                            <p>Scroll or Swipe Down to Continue</p>
+                            <h2>↓</h2>
+                            
+                        </div>
+
+                    </div>
+                </section>
+                <form>
                     <section id="child">
-                        <div className="intro">
-                            <h1>New Bottle</h1>
-                            <p>Instructions here lol</p>
+                        <label>(1/7) How are you feeling right now?</label>
+                        <br />
+                        <div className="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label className="btn btn-secondary">
+                                <input type="radio"
+                                    name="emotion"
+                                    value="+2"
+                                    checked={this.state.emotion === "+2"}
+                                    onChange={(event) => { this.handleChange(event) }}
+                                />
+                                Great
+                        </label>
+                            <label className="btn btn-secondary">
+                                <input type="radio"
+                                    name="emotion"
+                                    value="+1"
+                                    checked={this.state.emotion === "+1"}
+                                    onChange={(event) => { this.handleChange(event) }}
+                                />
+                                Good
+                        </label>
+                            <label className="btn btn-secondary">
+                                <input type="radio"
+                                    name="emotion"
+                                    value="0"
+                                    checked={this.state.emotion === "0"}
+                                    onChange={(event) => { this.handleChange(event) }}
+                                />
+                                Okay
+                        </label>
+                            <label className="btn btn-secondary">
+                                <input type="radio"
+                                    name="emotion"
+                                    value="-1"
+                                    checked={this.state.emotion === "-1"}
+                                    onChange={(event) => { this.handleChange(event) }}
+                                />
+                                Bad
+                        </label>
+                            <label className="btn btn-secondary">
+                                <input type="radio"
+                                    name="emotion"
+                                    value="-2"
+                                    checked={this.state.emotion === "-2"}
+                                    onChange={(event) => { this.handleChange(event) }}
+                                />
+                                Awful
+                        </label>
                         </div>
                     </section>
-                    <form>
-                        <section id="child">
-                            <label>How are you feeling right now?</label>
-                            <br />
-                            <div className="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label className="btn btn-secondary">
-                                    <input type="radio"
-                                        name="emotion"
-                                        value="+2"
-                                        checked={this.state.emotion === "+2"}
-                                        onChange={(event) => { this.handleChange(event) }}
-                                    />
-                                    Great
-                        </label>
-                                <label className="btn btn-secondary">
-                                    <input type="radio"
-                                        name="emotion"
-                                        value="+1"
-                                        checked={this.state.emotion === "+1"}
-                                        onChange={(event) => { this.handleChange(event) }}
-                                    />
-                                    Good
-                        </label>
-                                <label className="btn btn-secondary">
-                                    <input type="radio"
-                                        name="emotion"
-                                        value="0"
-                                        checked={this.state.emotion === "0"}
-                                        onChange={(event) => { this.handleChange(event) }}
-                                    />
-                                    Okay
-                        </label>
-                                <label className="btn btn-secondary">
-                                    <input type="radio"
-                                        name="emotion"
-                                        value="-1"
-                                        checked={this.state.emotion === "-1"}
-                                        onChange={(event) => { this.handleChange(event) }}
-                                    />
-                                    Bad
-                        </label>
-                                <label className="btn btn-secondary">
-                                    <input type="radio"
-                                        name="emotion"
-                                        value="-2"
-                                        checked={this.state.emotion === "-2"}
-                                        onChange={(event) => { this.handleChange(event) }}
-                                    />
-                                    Awful
-                        </label>
-                            </div>
-                        </section>
 
-                        <section id="child">
-                            <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">What happened?</label>
-                                <textarea className="form-control"
-                                    name="0"
-                                    value={this.state.body[0]}
-                                    onChange={(event) => { this.handleQuestion(event) }}
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    placeholder=""
-                                    aria-label="some description texts">
-                                </textarea>
-                            </div>
-                        </section>
+                    <section id="child">
+                        <div className="form-group">
+                            <label htmlFor="exampleFormControlTextarea1">(2/7) What happened?</label>
+                            <textarea className="form-control"
+                                name="0"
+                                value={this.state.body[0]}
+                                onChange={(event) => { this.handleQuestion(event) }}
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Write about something on your mind (for example: I failed my exam) ..."
+                                aria-label="some description texts">
+                            </textarea>
+                        </div>
+                    </section>
 
-                        <section id="child">
-                            <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">Could the situation be worse than it is? And how so?</label>
-                                <textarea className="form-control"
-                                    name="2"
-                                    value={this.state.body[2]}
-                                    onChange={(event) => { this.handleQuestion(event) }}
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    aria-label="some description texts">
-                                </textarea>
-                            </div>
-                        </section>
+                    <section id="child">
+                        <div className="form-group">
+                            <label htmlFor="exampleFormControlTextarea1">(3/7) Could the situation be worse than it is? And how so?</label>
+                            <textarea className="form-control"
+                                name="2"
+                                value={this.state.body[2]}
+                                onChange={(event) => { this.handleQuestion(event) }}
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Think about what could be the worse case scenario for your situation (i.e. I slept through my exam) ..."
+                                aria-label="some description texts">
+                            </textarea>
+                        </div>
+                    </section>
 
-                        <section id="child">
-                            <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">What are some factors that contributed to the situation?</label>
-                                <textarea className="form-control"
-                                    name="3"
-                                    value={this.state.body[3]}
-                                    onChange={(event) => { this.handleQuestion(event) }}
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    aria-label="some description texts">
-                                </textarea>
-                            </div>
-                        </section>
+                    <section id="child">
+                        <div className="form-group">
+                            <label htmlFor="exampleFormControlTextarea1"> (4/7) What are some factors that contributed to the situation?</label>
+                            <textarea className="form-control"
+                                name="3"
+                                value={this.state.body[3]}
+                                onChange={(event) => { this.handleQuestion(event) }}
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="There may be outside factors to consider that have you feel this way (i.e. I didn't get enough sleep)"
+                                aria-label="some description texts">
 
-                        <section id="child">
-                            <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">What factors in the situation are in your control?</label>
-                                <textarea className="form-control"
-                                    name="4"
-                                    value={this.state.body[4]}
-                                    onChange={(event) => { this.handleQuestion(event) }}
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    aria-label="some description texts">
-                                </textarea>
-                            </div>
-                        </section>
+                            </textarea>
+                        </div>
+                    </section>
 
-                        <section id="child">
-                            <br />
-                            <p> [ ** Will add a Mindfulness exercise ** ]</p>
-                            <br />
-                        </section>
+                    <section id="child">
+                        <div className="form-group">
+                            <label htmlFor="exampleFormControlTextarea1"> (5/7) What factors in the situation are in your control?</label>
+                            <textarea className="form-control"
+                                name="4"
+                                value={this.state.body[4]}
+                                onChange={(event) => { this.handleQuestion(event) }}
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Think about the things you put for the previous prompt and which of those things you can address"
+                                aria-label="some description texts">
+                            </textarea>
+                        </div>
+                    </section>
 
-                        <section id="child">
-                            <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">Can you brainstorm solutions you can do to address your situation?</label>
-                                <textarea className="form-control"
-                                    name="5"
-                                    value={this.state.body[5]}
-                                    onChange={(event) => { this.handleQuestion(event) }}
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    aria-label="some description texts">
-                                </textarea>
-                            </div>
-                        </section>
+                    <section id="child">
+                        <div className="form-group">
+                            <label htmlFor="exampleFormControlTextarea1"> (6/7) Can you brainstorm solutions you can do to address your situation?</label>
+                            <textarea className="form-control"
+                                name="5"
+                                value={this.state.body[5]}
+                                onChange={(event) => { this.handleQuestion(event) }}
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="Think of some resources you can use or actions you can do"
+                                aria-label="some description texts">
+                            </textarea>
+                        </div>
+                    </section>
 
-                        <section id="child">
-                            <div className="form-group">
-                                <label htmlFor="exampleFormControlTextarea1">How do you feel now?</label>
-                                <textarea className="form-control"
-                                    name="6"
-                                    value={this.state.body[6]}
-                                    onChange={(event) => { this.handleQuestion(event) }}
-                                    id="exampleFormControlTextarea1"
-                                    rows="3"
-                                    aria-label="some description texts">
-                                </textarea>
-                            </div>
+                    <section id="child">
+                        <br />
+                        <p> [ ** Will add a Mindfulness exercise ** ]</p>
+                        <br />
+                    </section>
 
-                            <div className="form-group">
-                                <label htmlFor="formGroupExampleInput">Tags</label>
-                                <input type="text" className="form-control"
-                                    name="tags"
-                                    value={this.state.tags}
-                                    onChange={(event) => { this.handleChange(event) }}
-                                    id="formGroupExampleInput"
-                                    placeholder="Tags for your bottle"
-                                    aria-label="Tags for your bottle"
-                                />
-                            </div>
+                    <section id="child">
+                        <div className="form-group">
+                            <label htmlFor="exampleFormControlTextarea1"> (7/7) How do you feel now?</label>
+                            <textarea className="form-control"
+                                name="6"
+                                value={this.state.body[6]}
+                                onChange={(event) => { this.handleQuestion(event) }}
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                aria-label="some description texts">
+                            </textarea>
+                        </div>
 
-                            <div id="buttons">
-                                <button className="btn btn-primary mr-2" onClick={(e) => this.addBottle(e)}>
-                                    Public
+                        <div className="form-group">
+                            <label htmlFor="formGroupExampleInput">Tags</label>
+                            <input type="text" className="form-control"
+                                name="tags"
+                                value={this.state.tags}
+                                onChange={(event) => { this.handleChange(event) }}
+                                id="formGroupExampleInput"
+                                placeholder="Tags for your bottle"
+                                aria-label="Tags for your bottle"
+                            />
+                        </div>
+
+                        <div id="buttons">
+                            <button className="btn btn-primary mr-2" onClick={(e) => this.addBottle(e)}>
+                                Make Public
                          </button>
-                                <button className="btn btn-primary mr-2" onClick={(e) => this.saveBottle(e)}>
-                                    Only I Can See
+                            <button className="btn btn-primary mr-2" onClick={(e) => this.saveBottle(e)}>
+                                Only I Can See
                          </button>
-                                <button className="btn btn-primary mr-2" onClick={() => this.disposeBottle()}>
-                                    Dispose
+                            <button className="btn btn-primary mr-2" onClick={() => this.disposeBottle()}>
+                                Dispose
                         </button>
-                            </div>
-                        </section>
-                    </form>
-                </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
 
 
 

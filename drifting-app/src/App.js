@@ -49,12 +49,10 @@ class App extends Component {
 
        <Container className="forumSubmission">
           <ForumSubmission onSubmit={fields => this.onSubmit(fields)} />
-
         </Container>
 
         {/*<Container className="Encouragement">
           <Encouragement onSubmit={fields => this.onSubmit(fields)} />
-
         </Container>*/}
 
       </div>

@@ -18,11 +18,13 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  color: #7A6085;
   padding: 20px;
+  overflow: scroll;
 }
 
 #section {
-    margin-top: 50px;
+    padding-top: 30px;
 }
 
 .Encouragement {
@@ -31,4 +33,10 @@ body {
 
 .App-header {
     display: none;
+}
+
+#description {
+    margin: auto;
+    width: 80%;
+    font-size: 12pt;
 }
