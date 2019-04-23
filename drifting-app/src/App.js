@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Navbar, Nav, NavItem, MenuItem, NavDropdown, Button, Form, FormControl, Container, Image } from 'react-bootstrap';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+
 import ForumSubmission from "./ForumSubmission";
 import Encouragement from "./Encouragement";
 import Forum from "./Forum";
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown, Button, Form, FormControl, Container, Image } from 'react-bootstrap';
+import Home from "./Home";
 
 class App extends Component {
   state = {
@@ -39,21 +43,30 @@ class App extends Component {
               <Button variant="outline-success">Search</Button>
             </Form>
           </Navbar.Collapse>
-        </Navbar> */}
+        </Navbar> */
 
-        <header className="App-header">
+        /*<header className="App-header">
           <Image src="drifting-logo.jpg" className="drifting-logo" />
-        </header>
-        
-        {/* Trying to create a container and make a new page */}
+        </header> */
 
-       <Container className="forumSubmission">
+        /* Trying to create a container and make a new page */
+
+        /*<Container className="forumSubmission">
           <ForumSubmission onSubmit={fields => this.onSubmit(fields)} />
-        </Container>
+        </Container> */
 
-        {/*<Container className="Encouragement">
+        /*<Container className="Encouragement">
           <Encouragement onSubmit={fields => this.onSubmit(fields)} />
         </Container>*/}
+
+        <Router>
+          <div>
+            <Route exact path="/" render={()=> <Home />} />
+            <Route path="/processing" render={() => <ForumSubmission onSubmit={fields => this.onSubmit(fields)} />} />
+            <Route path="/encourage" render={() => <Encouragement onSubmit={fields => this.onSubmit(fields)} />} />
+          </div>
+        </Router>
+
 
       </div>
     );
