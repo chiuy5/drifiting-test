@@ -6,15 +6,7 @@ export default class Encouragement extends Component {
     // Set up a blank title and description input field
     constructor(props) {
         super(props);
-        this.state = {
-            emotion: "",
-            exercise: "",
-            body: ["", "", "", "", "", "", ""],
-            tags: "",
-            isPublic: true,
-        };
-
-        this.displayMessage = this.displayMessage.bind(this);
+        this.state = {};
     }
 
     render() {
