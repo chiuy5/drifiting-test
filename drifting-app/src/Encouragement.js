@@ -222,14 +222,17 @@ export default class Encouragement extends Component {
     render() {
         return (
             <div className="container">
+                <div id="nav-links">
+                    <a href="./">Home</a> | <a href="./processing">Emotional Processing</a> | <a href="./encourage">Encouragement</a>
+                </div>
+
                 <div className="intro">
                     <h1>Encouraging Bottle</h1>
 
                     <div id="description">
                         <p>Share an encouraging message. It can be advice, a resource, a personal experience, or words of comfort</p>
-                        
+
                         <div id="guide">
-                            <h4>Remember</h4>
                             Be empathetic<br />
                             Acknowledge, but not minimize, other's emotions<br />
                             Don't feel pressure to have to talk<br />

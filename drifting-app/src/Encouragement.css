@@ -38,6 +38,12 @@ body {
 #description {
     margin: auto;
     width: 80%;
-    font-size: 12pt;
+    font-size: 10pt;
+    margin-bottom: 6%;
 }
 
+#nav-links {
+    margin-top: 20px;
+    font-size: 10pt;
+    margin-bottom: 20px;
+}

@@ -222,10 +222,18 @@ export default class ForumSubmission extends Component {
 
     render() {
         return (
+
+
+
             <div className="container" id="exercise">
+                <div id="nav-links">
+                    <a href="./">Home</a> | <a href="./processing">Emotional Processing</a> | <a href="./encourage">Encouragement</a>
+                </div>
 
                 <section id="child">
                     <div className="intro">
+
+
                         <h1>New Bottle</h1>
 
                         <div id="description">
@@ -236,7 +244,7 @@ export default class ForumSubmission extends Component {
                             <br />
                             <p>Scroll or Swipe Down to Continue</p>
                             <h2>↓</h2>
-                            
+
                         </div>
 
                     </div>

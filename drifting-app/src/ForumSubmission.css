@@ -60,3 +60,9 @@ html, body {
     width: 80%;
     font-size: 12pt;
 }
+
+#nav-links {
+    margin-top: 20px;
+    font-size: 10pt;
+    margin-bottom: 20px;
+}
