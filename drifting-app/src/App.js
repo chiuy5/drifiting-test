@@ -14,15 +14,21 @@ class App extends Component {
 
   render() {
     return (
-        <Router>
-          <div className="App">
-            <Route exact path="/" render={() => <Home />} />
-            <Route path="/processing" render={() => <ForumSubmission />} />
-            <Route path="/encourage" render={() => <Encouragement />} />
-          </div>
-        </Router>
+      <Router>
+        <div className="App">
+        <Route exact path="/" component={Home} />
+          <Route path="/processing" component={ForumSubmission} />
+          <Route path="/encourage" component={Encouragement} />
+
+        </div>
+      </Router>
     );
   }
 }
 
 export default App;
+
+/*
+          <Route exact path="/" render={() => <Home />} />
+          <Route path="/processing" render={() => <ForumSubmission />} />
+          <Route path="/encourage" render={() => <Encouragement />} />*/
