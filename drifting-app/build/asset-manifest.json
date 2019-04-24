@@ -1,16 +1,16 @@
 {
-  "main.css": "/drifting-test/drifting-app/build/static/css/main.fb4ddc47.chunk.css",
-  "main.js": "/drifting-test/drifting-app/build/static/js/main.a29d4c0e.chunk.js",
-  "main.js.map": "/drifting-test/drifting-app/build/static/js/main.a29d4c0e.chunk.js.map",
+  "main.css": "/drifting-test/drifting-app/build/static/css/main.8b111f89.chunk.css",
+  "main.js": "/drifting-test/drifting-app/build/static/js/main.be8078d8.chunk.js",
+  "main.js.map": "/drifting-test/drifting-app/build/static/js/main.be8078d8.chunk.js.map",
   "runtime~main.js": "/drifting-test/drifting-app/build/static/js/runtime~main.76937cee.js",
   "runtime~main.js.map": "/drifting-test/drifting-app/build/static/js/runtime~main.76937cee.js.map",
   "static/css/2.17ccdb34.chunk.css": "/drifting-test/drifting-app/build/static/css/2.17ccdb34.chunk.css",
-  "static/js/2.a863fd16.chunk.js": "/drifting-test/drifting-app/build/static/js/2.a863fd16.chunk.js",
-  "static/js/2.a863fd16.chunk.js.map": "/drifting-test/drifting-app/build/static/js/2.a863fd16.chunk.js.map",
+  "static/js/2.34795658.chunk.js": "/drifting-test/drifting-app/build/static/js/2.34795658.chunk.js",
+  "static/js/2.34795658.chunk.js.map": "/drifting-test/drifting-app/build/static/js/2.34795658.chunk.js.map",
   "index.html": "/drifting-test/drifting-app/build/index.html",
-  "precache-manifest.b4205f206818902e1084493a9023ec41.js": "/drifting-test/drifting-app/build/precache-manifest.b4205f206818902e1084493a9023ec41.js",
+  "precache-manifest.80e6076b367e17220b9a4de3de2a7f0d.js": "/drifting-test/drifting-app/build/precache-manifest.80e6076b367e17220b9a4de3de2a7f0d.js",
   "service-worker.js": "/drifting-test/drifting-app/build/service-worker.js",
   "static/css/2.17ccdb34.chunk.css.map": "/drifting-test/drifting-app/build/static/css/2.17ccdb34.chunk.css.map",
-  "static/css/main.fb4ddc47.chunk.css.map": "/drifting-test/drifting-app/build/static/css/main.fb4ddc47.chunk.css.map",
+  "static/css/main.8b111f89.chunk.css.map": "/drifting-test/drifting-app/build/static/css/main.8b111f89.chunk.css.map",
   "static/media/logo.svg": "/drifting-test/drifting-app/build/static/media/logo.ee7cd8ed.svg"
 }
