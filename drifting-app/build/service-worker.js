@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/drifting-test/drifting-app/build/precache-manifest.80e6076b367e17220b9a4de3de2a7f0d.js"
+  "/drifting-test/drifting-app/build/precache-manifest.a5e560ecfdb795a777ca12e459658199.js"
 );
 
 workbox.clientsClaim();
